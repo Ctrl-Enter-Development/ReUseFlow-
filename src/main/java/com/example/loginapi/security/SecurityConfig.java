@@ -29,7 +29,7 @@ public class SecurityConfig {
                 .requestMatchers("/api/auth/**").permitAll()
                 .anyRequest().authenticated()
             )
-            .httpBasic();  // Esse método está marcado como deprecated, mas funcional para testes
+            .httpBasic();  
         return http.build();
     }
 
